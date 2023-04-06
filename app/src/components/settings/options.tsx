@@ -60,11 +60,11 @@ export default function GenerationOptionsTab(props: any) {
                     },
                     {
                         label: intl.formatMessage({ defaultMessage: "GPT 4 (requires invite)" }),
-                        value: "gpt-4",
+                        value: "gpt-4-32k",
                     },
                 ]}
                 onChange={onModelChange} />
-            {model === 'gpt-4' && (
+            {model === 'gpt-4-32k' && (
                 <p style={{ marginBottom: '0.7rem' }}>
                     <FormattedMessage defaultMessage="Note: GPT-4 will only work if your OpenAI account has been granted access to the new model. <a>Request access here.</a>"
                         values={{ a: chunk => <a href="https://openai.com/waitlist/gpt-4-api" target="_blank" rel="noreferer">{chunk}</a> }} />
